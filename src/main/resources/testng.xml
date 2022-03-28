@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="POM Suite">
+  <test name="POM Test">
+  
+  <listeners>
+		<listener class-name="com.pom.qa.ExtentReport.ExtentReporterNG" />
+	</listeners>
+    <classes>
+    //refresh your project by right clicking on it you will get test-out put folder 
+    //go to test-output/index html/copy path and open in a browser
+        <class name="com.pom.qa.testcases.LoginPageTest"/>
+      <class name="com.pom.qa.testcases.ForgotPwPageTest"/>
+       <class name="com.pom.qa.testcases.HomePageTest"/>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
