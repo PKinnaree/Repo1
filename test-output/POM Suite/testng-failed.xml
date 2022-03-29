@@ -9,7 +9,6 @@
       <class name="com.pom.qa.testcases.LoginPageTest">
         <methods>
           <include name="emptyEmailinvalidPwdTest"/>
-          <include name="registerlinkTextTest"/>
           <include name="tearDown"/>
           <include name="emptyEmailEmptyPwdTest"/>
           <include name="setUp"/>

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">30 methods, 4 failed,   26 passed</span>
+                    <span class="method-stats">30 methods, 3 failed,   27 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -115,11 +115,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-POM_Suite" title="com.pom.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="loginWithEnterbtnCorrectEmailemptypwdTest">loginWithEnterbtnCorrectEmailemptypwdTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-POM_Suite" title="com.pom.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="registerlinkTextTest">registerlinkTextTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-POM_Suite -->
@@ -233,6 +228,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-POM_Suite" title="com.pom.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="registerlinkTextTest">registerlinkTextTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-POM_Suite" title="com.pom.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="reglinkDispalyedTest">reglinkDispalyedTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -308,68 +308,10 @@
                   <a name="loginWithEnterbtnCorrectEmailemptypwdTest">
                   </a> <!-- loginWithEnterbtnCorrectEmailemptypwdTest -->
                   <span class="method-name">loginWithEnterbtnCorrectEmailemptypwdTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger&apos;]/ol/li&quot;}
-  (Session info: chrome=99.0.4844.84)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;DESKTOP-E58OIO1&apos;, ip: &apos;192.168.0.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [83e008a0b7d398b7f118a7a41772e6ad, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger&apos;]/ol/li}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HPWORL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52643/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 83e008a0b7d398b7f118a7a41772e6ad
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy17.getText(Unknown Source)
-	at com.pom.qa.pages.LoginPage.errorMsgVerify(LoginPage.java:135)
+                  <div class="stack-trace">java.lang.AssertionError: expected [Password is required.] but found [Invalid password.]
 	at com.pom.qa.testcases.LoginPageTest.loginWithEnterbtnCorrectEmailemptypwdTest(LoginPageTest.java:143)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerlinkTextTest">
-                  </a> <!-- registerlinkTextTest -->
-                  <span class="method-name">registerlinkTextTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[contains(text(),&apos;Already registered?&apos;)]&quot;}
-  (Session info: chrome=99.0.4844.84)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;DESKTOP-E58OIO1&apos;, ip: &apos;192.168.0.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4402bb1784ccdcea2c31605e32975f62, findElement {using=xpath, value=//h3[contains(text(),&apos;Already registered?&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HPWORL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52691/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4402bb1784ccdcea2c31605e32975f62
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy17.getText(Unknown Source)
-	at com.pom.qa.pages.LoginPage.reglinkText(LoginPage.java:53)
-	at com.pom.qa.testcases.LoginPageTest.registerlinkTextTest(LoginPageTest.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -484,6 +426,13 @@ Session ID: 4402bb1784ccdcea2c31605e32975f62
                   <a name="pwdboxPresentTest">
                   </a> <!-- pwdboxPresentTest -->
                   <span class="method-name">pwdboxPresentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerlinkTextTest">
+                  </a> <!-- registerlinkTextTest -->
+                  <span class="method-name">registerlinkTextTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -640,130 +589,130 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(30);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'invalidEmailwronPwdTest')
+data.setCell(0, 1, 'LoginFromKeyboard')
 data.setCell(0, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(0, 3, 11406);
+data.setCell(0, 3, 7988);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'invalidEmailcorrectPwdTest')
+data.setCell(1, 1, 'SuccessfulLogInTest')
 data.setCell(1, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(1, 3, 10749);
+data.setCell(1, 3, 7620);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginWithEnterbtnCorrectEmailemptypwdTest')
+data.setCell(2, 1, 'invalidEmailwronPwdTest')
 data.setCell(2, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(2, 3, 10487);
+data.setCell(2, 3, 4117);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'registerlinkTextTest')
+data.setCell(3, 1, 'forgotpwdLinkTest')
 data.setCell(3, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(3, 3, 10016);
+data.setCell(3, 3, 3911);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'invalidEmaiemptyPwdTest')
+data.setCell(4, 1, 'WronEmailcorrectPwdTest')
 data.setCell(4, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(4, 3, 9523);
+data.setCell(4, 3, 3086);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'wronEmailemtyPwdTest')
 data.setCell(5, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(5, 3, 9495);
+data.setCell(5, 3, 2901);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'forgotpwdLinkTest')
+data.setCell(6, 1, 'emptyEmailcorrectPwdTest')
 data.setCell(6, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(6, 3, 7175);
+data.setCell(6, 3, 2833);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'correctEmailemptyPwdTest')
+data.setCell(7, 1, 'invalidEmailcorrectPwdTest')
 data.setCell(7, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(7, 3, 6451);
+data.setCell(7, 3, 2737);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'emptyEmailEmptyPwdTest')
+data.setCell(8, 1, 'emptyEmailinvalidPwdTest')
 data.setCell(8, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(8, 3, 3586);
+data.setCell(8, 3, 2439);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'emptyEmailwronPwdTest')
+data.setCell(9, 1, 'emptyEmailEmptyPwdTest')
 data.setCell(9, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(9, 3, 3408);
+data.setCell(9, 3, 2082);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'emptyEmailinvalidPwdTest')
+data.setCell(10, 1, 'LoginWithIncorrectData')
 data.setCell(10, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(10, 3, 3161);
+data.setCell(10, 3, 1974);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'LoginFromKeyboard')
+data.setCell(11, 1, 'invalidEmaiemptyPwdTest')
 data.setCell(11, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(11, 3, 3005);
+data.setCell(11, 3, 1933);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'SuccessfulLogInTest')
+data.setCell(12, 1, 'CorrectEmailwrongPwdTest')
 data.setCell(12, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(12, 3, 2333);
+data.setCell(12, 3, 1681);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'CorrectEmailwrongPwdTest')
+data.setCell(13, 1, 'loginWithEnterbtnCorrectEmailemptypwdTest')
 data.setCell(13, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(13, 3, 1984);
+data.setCell(13, 3, 1628);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'WronEmailcorrectPwdTest')
+data.setCell(14, 1, 'correctEmailemptyPwdTest')
 data.setCell(14, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(14, 3, 1942);
+data.setCell(14, 3, 1473);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'emptyEmailcorrectPwdTest')
+data.setCell(15, 1, 'emptyEmailwronPwdTest')
 data.setCell(15, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(15, 3, 1473);
+data.setCell(15, 3, 1369);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'LoginWithIncorrectData')
+data.setCell(16, 1, 'reglinkDispalyedTest')
 data.setCell(16, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(16, 3, 1038);
+data.setCell(16, 3, 76);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'reglinkDispalyedTest')
+data.setCell(17, 1, 'verifyForgotPwdTest')
 data.setCell(17, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(17, 3, 93);
+data.setCell(17, 3, 75);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyForgotPwdTest')
+data.setCell(18, 1, 'emailboxpresenttest')
 data.setCell(18, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(18, 3, 82);
+data.setCell(18, 3, 74);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'pwdboxPresentTest')
 data.setCell(19, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(19, 3, 78);
+data.setCell(19, 3, 74);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'emailboxpresenttest')
-data.setCell(20, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(20, 3, 59);
+data.setCell(20, 1, 'emailboxverify')
+data.setCell(20, 2, 'com.pom.qa.testcases.ForgotPwPageTest')
+data.setCell(20, 3, 57);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'verifyUsername')
-data.setCell(21, 2, 'com.pom.qa.testcases.HomePageTest')
-data.setCell(21, 3, 49);
+data.setCell(21, 1, 'registerlinkTextTest')
+data.setCell(21, 2, 'com.pom.qa.testcases.LoginPageTest')
+data.setCell(21, 3, 53);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'signoutbtntest')
+data.setCell(22, 1, 'logoPresenttest')
 data.setCell(22, 2, 'com.pom.qa.testcases.HomePageTest')
-data.setCell(22, 3, 45);
+data.setCell(22, 3, 48);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'logoPresenttest')
-data.setCell(23, 2, 'com.pom.qa.testcases.HomePageTest')
-data.setCell(23, 3, 44);
+data.setCell(23, 1, 'forgotpwstextverify')
+data.setCell(23, 2, 'com.pom.qa.testcases.ForgotPwPageTest')
+data.setCell(23, 3, 46);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'emailboxverify')
-data.setCell(24, 2, 'com.pom.qa.testcases.ForgotPwPageTest')
-data.setCell(24, 3, 40);
+data.setCell(24, 1, 'signoutbtntest')
+data.setCell(24, 2, 'com.pom.qa.testcases.HomePageTest')
+data.setCell(24, 3, 45);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'BackButtonverify')
-data.setCell(25, 2, 'com.pom.qa.testcases.ForgotPwPageTest')
-data.setCell(25, 3, 39);
+data.setCell(25, 1, 'verifyUsername')
+data.setCell(25, 2, 'com.pom.qa.testcases.HomePageTest')
+data.setCell(25, 3, 43);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'forgotpwstextverify')
-data.setCell(26, 2, 'com.pom.qa.testcases.ForgotPwPageTest')
-data.setCell(26, 3, 36);
+data.setCell(26, 1, 'signinbtnEnableTest')
+data.setCell(26, 2, 'com.pom.qa.testcases.LoginPageTest')
+data.setCell(26, 3, 41);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'signinbtnEnableTest')
-data.setCell(27, 2, 'com.pom.qa.testcases.LoginPageTest')
-data.setCell(27, 3, 32);
+data.setCell(27, 1, 'BackButtonverify')
+data.setCell(27, 2, 'com.pom.qa.testcases.ForgotPwPageTest')
+data.setCell(27, 3, 40);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'homepagetitle')
-data.setCell(28, 2, 'com.pom.qa.testcases.HomePageTest')
-data.setCell(28, 3, 7);
+data.setCell(28, 1, 'loginTitleTest')
+data.setCell(28, 2, 'com.pom.qa.testcases.LoginPageTest')
+data.setCell(28, 3, 9);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'loginTitleTest')
-data.setCell(29, 2, 'com.pom.qa.testcases.LoginPageTest')
+data.setCell(29, 1, 'homepagetitle')
+data.setCell(29, 2, 'com.pom.qa.testcases.HomePageTest')
 data.setCell(29, 3, 7);
 window.suiteTableData['POM_Suite']= { tableData: data, tableDiv: 'times-div-POM_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-POM_Suite">
               </div> <!-- times-div-POM_Suite -->
             </div> <!-- times-div -->
@@ -796,373 +745,371 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CorrectEmailwrongPwdTest</span>
-                <span class="method-start">6598 ms</span>
+                <span class="method-start">13049 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8585 ms</span>
+                <span class="method-start">14733 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9269 ms</span>
+                <span class="method-start">15568 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginFromKeyboard</span>
-                <span class="method-start">15283 ms</span>
+                <span class="method-start">26326 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18290 ms</span>
+                <span class="method-start">34320 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18973 ms</span>
+                <span class="method-start">35732 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginWithIncorrectData</span>
-                <span class="method-start">29330 ms</span>
+                <span class="method-start">42103 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30369 ms</span>
+                <span class="method-start">44078 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">31012 ms</span>
+                <span class="method-start">44759 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SuccessfulLogInTest</span>
-                <span class="method-start">36430 ms</span>
+                <span class="method-start">56818 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38765 ms</span>
+                <span class="method-start">64439 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">39410 ms</span>
+                <span class="method-start">67472 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">WronEmailcorrectPwdTest</span>
-                <span class="method-start">44226 ms</span>
+                <span class="method-start">76781 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46169 ms</span>
+                <span class="method-start">79868 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">46835 ms</span>
+                <span class="method-start">81765 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">correctEmailemptyPwdTest</span>
-                <span class="method-start">53070 ms</span>
+                <span class="method-start">88517 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">59522 ms</span>
+                <span class="method-start">89992 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">60206 ms</span>
+                <span class="method-start">90905 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emailboxpresenttest</span>
-                <span class="method-start">68181 ms</span>
+                <span class="method-start">99067 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">68242 ms</span>
+                <span class="method-start">99142 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">69026 ms</span>
+                <span class="method-start">99795 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">emptyEmailEmptyPwdTest</span>
-                <span class="method-start">76236 ms</span>
+                <span class="method-start">107494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">79824 ms</span>
+                <span class="method-start">109579 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">80484 ms</span>
+                <span class="method-start">110251 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyEmailcorrectPwdTest</span>
-                <span class="method-start">85988 ms</span>
+                <span class="method-start">118513 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">87462 ms</span>
+                <span class="method-start">121347 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">88188 ms</span>
+                <span class="method-start">124135 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">emptyEmailinvalidPwdTest</span>
-                <span class="method-start">95186 ms</span>
+                <span class="method-start">131831 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">98348 ms</span>
+                <span class="method-start">134271 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">99003 ms</span>
+                <span class="method-start">134953 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyEmailwronPwdTest</span>
-                <span class="method-start">106881 ms</span>
+                <span class="method-start">142042 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">110290 ms</span>
+                <span class="method-start">143412 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">111152 ms</span>
+                <span class="method-start">144085 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">forgotpwdLinkTest</span>
-                <span class="method-start">122160 ms</span>
+                <span class="method-start">152702 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">129335 ms</span>
+                <span class="method-start">156614 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">130003 ms</span>
+                <span class="method-start">157715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmaiemptyPwdTest</span>
-                <span class="method-start">136910 ms</span>
+                <span class="method-start">169386 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">146434 ms</span>
+                <span class="method-start">171320 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">147118 ms</span>
+                <span class="method-start">175006 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmailcorrectPwdTest</span>
-                <span class="method-start">160654 ms</span>
+                <span class="method-start">182767 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">171404 ms</span>
+                <span class="method-start">185505 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">172075 ms</span>
+                <span class="method-start">186155 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmailwronPwdTest</span>
-                <span class="method-start">185604 ms</span>
+                <span class="method-start">197808 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">197011 ms</span>
+                <span class="method-start">201926 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">197674 ms</span>
+                <span class="method-start">210698 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTitleTest</span>
-                <span class="method-start">212690 ms</span>
+                <span class="method-start">218131 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">212698 ms</span>
+                <span class="method-start">218142 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">213386 ms</span>
+                <span class="method-start">218883 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginWithEnterbtnCorrectEmailemptypwdTest</span>
-                <span class="method-start">228920 ms</span>
+                <span class="method-start">227835 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">239417 ms</span>
+                <span class="method-start">229465 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">240087 ms</span>
+                <span class="method-start">231571 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">pwdboxPresentTest</span>
-                <span class="method-start">252956 ms</span>
+                <span class="method-start">238950 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">253035 ms</span>
+                <span class="method-start">239033 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">253725 ms</span>
+                <span class="method-start">239727 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">registerlinkTextTest</span>
-                <span class="method-start">257946 ms</span>
+                <span class="method-start">247438 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">267972 ms</span>
+                <span class="method-start">247493 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">268652 ms</span>
+                <span class="method-start">248153 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">reglinkDispalyedTest</span>
-                <span class="method-start">281870 ms</span>
+                <span class="method-start">256990 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">281967 ms</span>
+                <span class="method-start">257079 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">282718 ms</span>
+                <span class="method-start">257758 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signinbtnEnableTest</span>
-                <span class="method-start">295673 ms</span>
+                <span class="method-start">266310 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">295706 ms</span>
+                <span class="method-start">266352 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">296363 ms</span>
+                <span class="method-start">268281 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyForgotPwdTest</span>
-                <span class="method-start">309598 ms</span>
+                <span class="method-start">277450 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">309681 ms</span>
+                <span class="method-start">277526 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">310366 ms</span>
+                <span class="method-start">278957 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">wronEmailemtyPwdTest</span>
-                <span class="method-start">318534 ms</span>
+                <span class="method-start">288870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">328030 ms</span>
+                <span class="method-start">291772 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.qa.testcases.ForgotPwPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">328695 ms</span>
+                <span class="method-start">293297 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">BackButtonverify</span>
-                <span class="method-start">346801 ms</span>
+                <span class="method-start">301611 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">346840 ms</span>
+                <span class="method-start">301651 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">347507 ms</span>
+                <span class="method-start">302314 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emailboxverify</span>
-                <span class="method-start">362825 ms</span>
+                <span class="method-start">311213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">362866 ms</span>
+                <span class="method-start">311271 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">363539 ms</span>
+                <span class="method-start">312022 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">forgotpwstextverify</span>
-                <span class="method-start">379933 ms</span>
+                <span class="method-start">321516 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">379970 ms</span>
+                <span class="method-start">321563 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">380643 ms</span>
+                <span class="method-start">322270 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homepagetitle</span>
-                <span class="method-start">394466 ms</span>
+                <span class="method-start">340274 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">394474 ms</span>
+                <span class="method-start">340283 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">395169 ms</span>
+                <span class="method-start">341169 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logoPresenttest</span>
-                <span class="method-start">403324 ms</span>
+                <span class="method-start">357124 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">403369 ms</span>
+                <span class="method-start">357173 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">404200 ms</span>
+                <span class="method-start">360312 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signoutbtntest</span>
-                <span class="method-start">420192 ms</span>
+                <span class="method-start">371754 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">420238 ms</span>
+                <span class="method-start">371800 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">420902 ms</span>
+                <span class="method-start">372581 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUsername</span>
-                <span class="method-start">443301 ms</span>
+                <span class="method-start">382501 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">443351 ms</span>
+                <span class="method-start">382545 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
